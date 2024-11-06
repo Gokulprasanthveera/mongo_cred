@@ -9,7 +9,7 @@ dotenv.config(); // Load environment variables from .env file
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: 'vercellink', // Replace with her actual frontend URL
+  origin: 'https://mongo-cred.vercel.app/', // Replace with her actual frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
